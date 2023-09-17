@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="todo list app" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <title>ToDo</title>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="wrapper">
+      <section class="date__container">
+        <div class="date__item">
+          <p class="date__item-number" id="date-number"></p>
+          <div class="date__item-second">
+            <p class="date__item-mounth" id="date-mounth"></p>
+            <p class="date__item-year" id="date-year"></p>
+          </div>
+        </div>
+        <div class="date__item">
+          <p class="date__item-day" id="date-day">
+
+          </p>
+        </div>
+      </section>
+      <section class="todo">
+        <article id="task-list" class="todo__task-list task-list">
+          <div class="task-list__item">
+          </div>
+        </article>
+        <article class="todo__add-task add-task">
+          <input id="add-task__input" class="add-task__input" type="text" placeholder="Add new task?" />
+          <img src="./img/tab.png" add="add task button" id="add-task__btn" class="add-task__btn"/>
+        </article>
+      </section>
+      <section id="modal-edit" class="modal-window">
+        <div class="modal__content">
+          <img id="exit" src="img//close.png" alt="close modal window" class="modal__exit-btn"/>
+          <input id="edit-task__input" class="modal__input" type="text" placeholder="Add your task?" />
+          <button id="apply-task__btn" class="modal__apply-btn">Apply</button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
